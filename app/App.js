@@ -14,7 +14,7 @@ class App extends Component {
     super(...arguments);
     this.state = {
       route: window.location.hash.substr(1),
-      access: true
+      access: false
     };
   }
 
