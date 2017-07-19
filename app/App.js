@@ -50,7 +50,10 @@ class App extends Component {
             <li style={{ display: this.state.access ? 'inline-block' : 'none' }}>
               <a className="btn btn-default" href="#/users">Users</a>
             </li>
-            <li><button className="btn btn-default" type="button" onClick={this.changeAccess.bind(this, false)}>Exit</button></li>
+            <li style={{ display: this.state.access ? 'inline-block' : 'none' }}>
+              <button className="btn btn-default" type="button" 
+              onClick={this.changeAccess.bind(this, false)}>Exit</button>
+            </li>
           </ul>
         </menu>
         <Child route={this.state.route}
