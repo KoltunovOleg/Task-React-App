@@ -45,7 +45,7 @@ class Registration extends Component {
     return (
       <div>
         <h3 className="h3">Registartion</h3>
-        <form className="regForm" onSubmit={this.handleSubmit.bind(this)}>
+        <form onSubmit={this.handleSubmit.bind(this)}>
                 <div className="form-group">
                   <input className="form-control" name="email" type="mail" placeholder="Email" />
                 </div>

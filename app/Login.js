@@ -37,11 +37,7 @@ class Login extends Component {
     return (
       <div>
         <h3 className="h3">Login</h3>
-        <form className="regForm" onSubmit={this.handleSubmit.bind(this)}>
-          {/** 
-        *Почему без bind(this) не срабатывала передача
-        *this.props.onchangeAccess(getdata) в родителя?!
-        */}
+        <form onSubmit={this.handleSubmit.bind(this)}>
           <div className="form-group">
             <input className="form-control" name="email" type="mail" placeholder="Email" />
           </div>

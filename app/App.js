@@ -6,7 +6,7 @@ import { render } from 'react-dom';
 import Child from './Child';
 
 
-localStorage.setItem("access", false);
+// localStorage.setItem("access", false);
 
 class App extends Component {
 
@@ -28,7 +28,7 @@ class App extends Component {
 
   changeAccess(value) {
     console.log(`App: ${value}`);
-    localStorage.setItem("access", value);
+    // localStorage.setItem("access", value);
     this.setState({
       access: value
     });
