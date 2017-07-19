@@ -3,10 +3,18 @@ import React, { Component } from 'react';
 //It is compare pass & pass_confirm
 function toCompare(...args) {
   console.log(`toCompare: ${args}`);
-  if (!args[0] || !args[1] || !args[2]) {
-    alert('Try again please.');
+  if (!args[0]) {
+    alert('Enter your e-mail please.');
     return false;
-  } else {
+  } else if (!args[1]) {
+    alert('Enter your password please.');
+    return false;
+  }
+  else if (!args[2]) {
+    alert('Confirm your password please.');
+    return false;
+  }
+  else{
     let retrievedObject = localStorage.getItem(args[0]);
     if (retrievedObject) {
       alert('Such login already exists. Try again please.');
