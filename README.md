@@ -10,3 +10,6 @@ https://koltunovoleg.github.io/Task-React-App/
 To build bundle.js:
 1. npm run build
 2. look the folder 'public/'
+
+
+folder /docs for GitHub Pages https://koltunovoleg.github.io/Task-React-App/
